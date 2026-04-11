@@ -35,4 +35,11 @@ return [
         ],
     ],
 
+    'razorpay' => [
+        'key' => env('RAZORPAY_KEY_ID'),
+        'secret' => env('RAZORPAY_KEY_SECRET'),
+        'company' => env('RAZORPAY_COMPANY', config('app.name')),
+        'description' => env('RAZORPAY_DESCRIPTION', 'Payment checkout'),
+    ],
+
 ];
